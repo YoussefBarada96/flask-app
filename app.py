@@ -7,8 +7,8 @@ import pymongo
 from pymongo import MongoClient
 client = MongoClient('mongodb+srv://<username>:<password>@cluster0.2h1xfjv.mongodb.net/?retryWrites=true&w=majority')
 
-db = client["first_app"]
-collection = db["users"]
+db = client["database"]
+collection = db["collection_name"]
 
 app = Flask(__name__)
 app.config.from_object('config')
