@@ -5,7 +5,7 @@ from flask import Flask, session, url_for, redirect, render_template, request, a
 from werkzeug.utils import secure_filename
 import pymongo
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://youssef:youssef96@cluster0.2h1xfjv.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://<username>:<password>@cluster0.2h1xfjv.mongodb.net/?retryWrites=true&w=majority')
 
 db = client["first_app"]
 collection = db["users"]
